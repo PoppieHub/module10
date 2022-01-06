@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    border-color: #3D689C;
+    overflow: hidden;
+}
+
+.card {
+    position: absolute;
+    margin-top: 10%;
+    border: none;
+}
+
+.card-header {
+    min-height: 50px;
+    max-height: 50px;
+
+    width: 600px;
+    min-width: 100%;
+    position: relative;
+
+    font-family: 'Pattaya', sans-serif;
+    font-size: 18px;
+    background: #222;
+    color: #aaa;
+}
+
+.card-body {
+    font-family: 'EB Garamond', serif;
+}
+
+.avatar {
+
+}
+
+#painting {
+    background: #000000;
+    width: auto;
+    height: auto;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+#painting:hover {
+    background: #000000;
+}
