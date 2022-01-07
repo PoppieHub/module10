@@ -6,6 +6,9 @@ const gender = document.querySelector('#genderOutput');
 const profession = document.querySelector('#professionOutput');
 const image = document.querySelector('.avatar');
 
+const btnDelete =  document.querySelector('.delete');
+const btnRefresh =  document.querySelector('.refresh');
+
 function generate () {
     const initPerson = personGenerator.getPerson();
 
@@ -30,7 +33,7 @@ window.addEventListener('load', function () {
 });
 
 
-document.querySelector('.delete').addEventListener('click',function () {
+btnDelete.addEventListener('click',function () {
 
     image.src = 'assets/img/default.svg';
 
@@ -43,4 +46,4 @@ document.querySelector('.delete').addEventListener('click',function () {
 
 });
 
-document.querySelector('.refresh').addEventListener('click',()=>generate());
+btnRefresh.addEventListener('click',()=>generate());

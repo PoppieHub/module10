@@ -6,11 +6,9 @@ div.onmousedown = function(e) {
     let shiftX = e.pageX  - coords.left;
     let shiftY = e.pageY + 192 - coords.top;
 
-    div.style.position = 'absolute';
-    document.body.appendChild(div);
-    moveAt(e);
 
-    //div.style.zIndex = 1000; // над другими элементами
+    //document.body.appendChild(div);
+    moveAt(e);
 
     function moveAt(e) {
         div.style.left = e.pageX - shiftX + 'px';
@@ -27,10 +25,6 @@ div.onmousedown = function(e) {
     };
 
 }
-
-div.ondragstart = function() {
-    return false;
-};
 
 function getCoords(elem) {   // кроме IE8-
     let box = elem.getBoundingClientRect();
