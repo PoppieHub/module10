@@ -26,7 +26,7 @@ div.onmousedown = function(e) {
 
 }
 
-function getCoords(elem) {   // кроме IE8-
+function getCoords(elem) { 
     let box = elem.getBoundingClientRect();
     return {
         top: box.top + pageYOffset,
