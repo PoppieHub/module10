@@ -12,7 +12,7 @@ div.onmousedown = function(e) {
 
     function moveAt(e) {
         div.style.left = e.pageX - shiftX + 'px';
-        div.style.top = e.pageY - shiftY + 'px';
+        div.style.top = e.pageY + 192 - shiftY + 'px';
     }
 
     document.onmousemove = function(e) {
