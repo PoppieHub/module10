@@ -4,7 +4,7 @@ div.onmousedown = function(e) {
 
     let coords = getCoords(div);
     let shiftX = e.pageX  - coords.left;
-    let shiftY = e.pageY + 192 - coords.top;
+    let shiftY = e.pageY  - coords.top;
 
 
     //document.body.appendChild(div);
