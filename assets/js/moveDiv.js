@@ -3,8 +3,8 @@ let div = document.querySelector('.card');
 div.onmousedown = function(e) {
 
     let coords = getCoords(div);
-    let shiftX = e.pageX  - coords.left;
-    let shiftY = e.pageY  - coords.top;
+    let shiftX = e.pageX - coords.left;
+    let shiftY = e.pageY - coords.top;
 
 
     //document.body.appendChild(div);
